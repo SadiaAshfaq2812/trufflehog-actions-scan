@@ -15,7 +15,7 @@ RUN pip install gitdb2==3.0.0 truffleHog==2.0.99
 RUN apk --update add git less openssh && \
   rm -rf /var/lib/apt/lists/* && \
   rm /var/cache/apk/*
-
+RUN echo 'Hello trufflehog'
 ADD entrypoint.sh  /entrypoint.sh
 ADD regexes.json /regexes.json
 
