@@ -1,3 +1,9 @@
+
+# Define environment variables for Cloud Run
+ENV PORT 3000
+ENV HOST 0.0.0.0
+EXPOSE 3000
+
 FROM python:3.7-alpine
 
 LABEL name="trufflehog-actions-scan"
